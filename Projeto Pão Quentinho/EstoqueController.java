@@ -1,13 +1,14 @@
 package br.com.paofresquim.estoque;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*; 
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
 @RestController
+@CrossOrigin(origins = "*") 
 @RequestMapping("/api/estoques")
 public class EstoqueController {
 
