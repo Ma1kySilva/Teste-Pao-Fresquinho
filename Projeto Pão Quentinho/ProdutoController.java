@@ -1,11 +1,12 @@
 package br.com.paofresquim.produto;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*; 
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*") 
 @RequestMapping("/api/produtos")
 public class ProdutoController {
 
